@@ -8,7 +8,7 @@ A full-stack operations portal for a small wholesale or distribution business. I
 - Keeps a product catalogue with SKU, price, warehouse location, and stock level.
 - Records every deliberate stock addition or removal as a stock movement.
 - Creates delivery challans containing one or more product lines.
-- Reduces inventory only after a challan is confirmed and accounted for.
+- Reduces inventory only after a challan is confirmed.
 - Supports four roles: Admin, Sales, Warehouse, and Accounts.
 
 ## Main workflow
