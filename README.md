@@ -2,17 +2,13 @@
 
 A full-stack operations portal for a small wholesale or distribution business. It brings customer records, product inventory, stock history, and delivery challans into one web application.
 
-## Project background
-
-This repository is based on the original work at [Akhilesh-2007/mini-erp-crm-portal](https://github.com/Akhilesh-2007/mini-erp-crm-portal). The documentation in this fork has been reorganised to support learning, local setup, and manual verification of the system.
-
 ## What the application does
 
 - Stores customer contact and business information.
 - Keeps a product catalogue with SKU, price, warehouse location, and stock level.
 - Records every deliberate stock addition or removal as a stock movement.
 - Creates delivery challans containing one or more product lines.
-- Reduces inventory only after a challan is confirmed.
+- Reduces inventory only after a challan is confirmed and accounted for.
 - Supports four roles: Admin, Sales, Warehouse, and Accounts.
 
 ## Main workflow
