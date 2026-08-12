@@ -147,3 +147,56 @@ Do not commit `.env` files or secrets to GitHub.
 J Charanjith Rao
 
 GitHub: https://github.com/JCharanjithRao
+
+
+## Architecture
+
+```text
+                  USER
+                    |
+                    v
+          +------------------+
+          |  React + Vite    |
+          |    Frontend      |
+          |    Vercel        |
+          +--------+---------+
+                   |
+                REST API
+                   |
+                   v
+          +------------------+
+          | Node.js +        |
+          | Express +        |
+          | TypeScript       |
+          |    Render        |
+          +--------+---------+
+                   |
+                   v
+          +------------------+
+          |     Prisma       |
+          |       ORM        |
+          +--------+---------+
+                   |
+                   v
+          +------------------+
+          |    PostgreSQL    |
+          |     Render       |
+          +------------------+
+```
+
+### Architecture Flow
+
+The user interacts with the React and Vite frontend, which is deployed on Vercel.
+
+The frontend communicates with the Node.js, Express, and TypeScript backend through REST APIs.
+
+The backend handles authentication, authorization, business logic, and API requests. It uses Prisma ORM to communicate with the PostgreSQL database.
+
+The PostgreSQL database stores the application's persistent data and is hosted on Render.
+
+Overall data flow:
+
+```text
+User → React Frontend → REST API → Node.js Backend → Prisma ORM → PostgreSQL
+```
+
